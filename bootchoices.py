@@ -3,6 +3,8 @@ Created on Jul 13, 2018
 @author: scy
 @IDE: eclipse
 '''
+
+
 import os
 import getch
 
@@ -32,6 +34,7 @@ def programming():
     eclipse         >&/dev/null &          \  
     ''')    
 
+    
 def pirate():
     standard()    
     os.system('''
@@ -39,6 +42,7 @@ def pirate():
     soulseekqt      >&/dev/null &          \
     ''')   
 
+    
 def surfing():
     standard()    
     os.system('''
@@ -52,8 +56,8 @@ def gaming():
     steam           >&/dev/null &          \
     playonlinux     >&/dev/null &          \
     ''')   
-           
-    
+     
+        
 print('PC booted up, what do you want to do')
 while True:
     print('''
@@ -68,7 +72,7 @@ while True:
         break
         
         
-if choice.upper() == '1':
+if choice.upper()   ==  '1':
     programming()
 
 elif choice.upper() == '2':
