@@ -16,9 +16,9 @@ def standard():
     xbindkeys                                                   >&/dev/null &  \
     xrdb /home/scy/.Xresources                                  >&/dev/null &  \
     feh --bg-max /home/scy/Pictures/destroyer.jpg               >&/dev/null &  \
-    polybar --config=/home/scy/.config/polybar/config scy       >&/dev/null &  \
+    polybar --config=/home/scy/.config/polybar/config scy          >&/dev/null &  \
     nm-applet                                                   >&/dev/null &  \
-    compton --config /home/scy/.config/compton/compton.conf     >&/dev/null &  \
+    compton --config /home/scy/.config/compton/compton.conf       >&/dev/null &  \
     /home/scy/Documents/Scripts/keepass.sh                      >&/dev/null &  \
     signal-desktop                                              >&/dev/null &  \
     discord                                                     >&/dev/null &  \
@@ -42,7 +42,7 @@ def pirate():
 def surfing():
     standard()    
     os.system('''
-    firefox         >&/dev/null &          \
+    firefox          >&/dev/null &          \
     ''')   
  
  
@@ -59,8 +59,8 @@ while True:
     print('''
     1. Programming
     2. Be a pirate
-    3. Surfing
-    4. Gaming
+    3. Surf
+    4. Game
     ''')
     
     choice = getch.getch()
